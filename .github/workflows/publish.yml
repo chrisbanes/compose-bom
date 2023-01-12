@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    tags:
+      - v*
+  pull_request:
 
 jobs:
   deploy:
@@ -21,7 +24,14 @@ jobs:
 
       - uses: gradle/gradle-build-action@v2
 
+      - name: Deploy to Maven Local for testing
+        run: ./gradlew bom:publishToMavenLocal
+
+      - name: Build the test app to verify it works
+        run: ./gradlew testapp:assemble
+
       - name: Deploy to Sonatype
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: ./gradlew bom:publish --no-parallel
         env:
           ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
