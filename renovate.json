@@ -6,10 +6,14 @@
   "ignoreUnstable": false,
   "packageRules": [
     {
+      "groupName": "Jetpack Compose",
+      "groupSlug": "compose",
       "matchPackagePatterns": [
-        "^androidx.compose"
-      ],
-      "group": "compose",
+        "androidx.compose.*"
+      ]
+    },    
+    {
+      "description": "Automatically merge version bumps",
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
