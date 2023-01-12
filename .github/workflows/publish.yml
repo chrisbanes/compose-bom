@@ -21,6 +21,12 @@ jobs:
 
       - uses: gradle/gradle-build-action@v2
 
+      - name: Deploy to Maven Local for testing
+        run: ./gradlew bom:publishToMavenLocal
+
+      - name: Build the test app to verify it works
+        run: ./gradlew testapp:assemble
+
       - name: Deploy to Sonatype
         run: ./gradlew bom:publish --no-parallel
         env:
