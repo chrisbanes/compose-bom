@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -22,7 +22,7 @@ jobs:
       - uses: gradle/gradle-build-action@v2
 
       - name: Deploy to Sonatype
-        run: ./gradlew publish --no-parallel
+        run: ./gradlew bom:publish --no-parallel
         env:
           ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
