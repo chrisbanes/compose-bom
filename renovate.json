@@ -3,7 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "ignoreUnstable": false,
   "packageRules": [
     {
       "description": "Automatically merge version bumps",
