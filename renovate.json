@@ -6,6 +6,10 @@
   "ignoreUnstable": false,
   "packageRules": [
     {
+      "matchPackagePatterns": [
+        "^androidx.compose"
+      ],
+      "group": "compose",
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
