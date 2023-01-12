@@ -1,0 +1,30 @@
+# Gradle
+.gradle
+build/
+
+/local.properties
+
+# IntelliJ .idea folder
+.idea/workspace.xml
+.idea/misc.xml
+.idea/libraries
+.idea/caches
+.idea/navEditor.xml
+.idea/tasks.xml
+.idea/modules.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/deploymentTargetDropDown.xml
+.idea/androidTestResultsUserPreferences.xml
+gradle.xml
+*.iml
+
+# General
+.DS_Store
+.externalNativeBuild
+
+# VS Code config
+org.eclipse.buildship.core.prefs
+.classpath
+.project
+bin/
