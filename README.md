@@ -2,7 +2,7 @@
 
 # Compose BOM (alpha edition)
 
-The Android team at Google introduced a BOM (Bills of Materials) to simplify managing Compose dependencies, late in 2022. You can read more about the BOM in the offical setup documentation: https://developer.android.com/jetpack/compose/setup#using-the-bom
+The Android team at Google introduced a BOM (Bills of Materials) to simplify managing Compose dependencies, late in 2022. You can read more about the BOM in the official setup documentation: https://developer.android.com/jetpack/compose/setup#using-the-bom
 
 The official BOM is great for automatically using the latest _stable_ dependencies, but there are times when you may want to depend on the latest _non-stable_ versions instead (alphas, etc). That is where this repository comes in. This repository contains a copy of the official Compose BOM, but with the latest versions of each library.
 
