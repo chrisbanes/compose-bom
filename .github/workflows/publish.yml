@@ -26,6 +26,10 @@ jobs:
 
       - name: Deploy to Maven Local for testing
         run: ./gradlew bom:publishToMavenLocal
+        env:
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.GPG_KEY }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyId: ${{ secrets.GPG_KEY_ID }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.GPG_KEY_PASSWORD }}
 
       - name: Build the test app to verify it works
         run: ./gradlew testapp:assemble
