@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    api(platform("dev.chrisbanes.compose:compose-bom:2023.02.00-alpha01"))
+    api(platform("dev.chrisbanes.compose:compose-bom:2023.02.00-beta01"))
 
     // Use whichever Compose artifacts you need without a version number
     implementation("androidx.compose.foundation:foundation")
