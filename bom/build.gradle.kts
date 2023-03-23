@@ -1,6 +1,6 @@
 plugins {
     `java-platform`
-    id("com.vanniktech.maven.publish") version "0.24.0"
+    id("com.vanniktech.maven.publish") version "0.25.0"
 }
 
 dependencies {
