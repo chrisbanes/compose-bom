@@ -11,6 +11,7 @@
       "matchPackagePatterns": [
         "androidx.compose.*"
       ],
+      "ignoreUnstable": false,
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
