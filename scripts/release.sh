@@ -15,8 +15,8 @@ echo "Publishing $NEW_VERSION"
 
 # Prepare release
 sed -i '' "s/${SNAPSHOT_VERSION}/${NEW_VERSION}/g" gradle.properties
-git commit -am "Prepare for release $NEW_VERSION"
-git tag -a "$NEW_VERSION" -m "Version $NEW_VERSION"
+git commit -am "Prepare for release v$NEW_VERSION"
+git tag "v$NEW_VERSION"
 
 # Publish
 ./gradlew publish
