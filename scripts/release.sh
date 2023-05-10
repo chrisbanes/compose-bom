@@ -13,8 +13,13 @@ SNAPSHOT_VERSION=$(getProperty 'VERSION_NAME' gradle.properties)
 
 echo "Publishing $NEW_VERSION"
 
+SEDOPTION=
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  SEDOPTION="-i ''"
+fi
+
 # Prepare release
-sed -i '' "s/${SNAPSHOT_VERSION}/${NEW_VERSION}/g" gradle.properties
+sed $SEDOPTION "s/${SNAPSHOT_VERSION}/${NEW_VERSION}/g" gradle.properties
 git commit -am "Prepare for release v$NEW_VERSION"
 git tag "v$NEW_VERSION"
 
