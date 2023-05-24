@@ -8,7 +8,7 @@ dependencies {
         api("androidx.compose.animation:animation:1.5.0-beta01")
         api("androidx.compose.animation:animation-core:1.5.0-beta01")
         api("androidx.compose.animation:animation-graphics:1.5.0-beta01")
-        api("androidx.compose.foundation:foundation:1.5.0-alpha04")
+        api("androidx.compose.foundation:foundation:1.5.0-beta01")
         api("androidx.compose.foundation:foundation-layout:1.5.0-beta01")
         api("androidx.compose.material:material:1.5.0-beta01")
         api("androidx.compose.material:material-icons-core:1.5.0-alpha04")
@@ -34,6 +34,6 @@ dependencies {
         api("androidx.compose.ui:ui-tooling-preview:1.5.0-beta01")
         api("androidx.compose.ui:ui-unit:1.5.0-beta01")
         api("androidx.compose.ui:ui-util:1.5.0-beta01")
-        api("androidx.compose.ui:ui-viewbinding:1.5.0-alpha04")
+        api("androidx.compose.ui:ui-viewbinding:1.5.0-beta01")
     }
 }
