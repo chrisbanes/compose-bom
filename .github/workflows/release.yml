@@ -13,8 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Update Git user
+        run: |
+          git config --local user.name "Chris Banes"
+          git config --local user.email chrisbanes@users.noreply.github.com
 
       - name: Setup JDK
         uses: actions/setup-java@v3
