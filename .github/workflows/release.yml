@@ -7,17 +7,21 @@ on:
         description: 'Version name (without v)'
         required: true
         type: string
+      snapshot:
+        description: 'Next SNAPSHOT version (without v). If empty, uses current value'
+        required: false
+        type: string        
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
-    permissions:
-      contents: write
-
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.OWNER_PAT }}
+          fetch-depth: 0 # fetch all history
       
       - name: Update Git user
         run: |
@@ -32,12 +36,12 @@ jobs:
 
       - uses: gradle/gradle-build-action@v2
         with:
-          # Disable caching. Don't want to spoil the main cache
+          # Disable writing to cache. Don't want to spoil the main cache
           cache-read-only: true
 
       - name: Release
         if:  ${{ inputs.version }} 
-        run: ./scripts/release.sh ${{ inputs.version }} 
+        run: ./scripts/release.sh ${{ inputs.version }} ${{ inputs.snapshot }}
         env:
           ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
