@@ -37,7 +37,7 @@ repositories {
 }
 
 dependencies {
-    api(platform("dev.chrisbanes.compose:compose-bom:${project.properties["VERSION_NAME"]}"))
+    implementation(platform(project(":bom")))
 
     implementation("androidx.compose.foundation:foundation")
     implementation("androidx.compose.material:material")
