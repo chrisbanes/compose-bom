@@ -10,7 +10,10 @@ on:
       snapshot:
         description: 'Next SNAPSHOT version (without v). If empty, uses current value'
         required: false
-        type: string        
+        type: string
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
