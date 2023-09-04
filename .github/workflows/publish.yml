@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           # We need to use a Personal Access Token from an admin to be able to commit to main,
           # as it is a protected branch.
