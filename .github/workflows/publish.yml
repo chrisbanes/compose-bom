@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.OWNER_PAT }}
 
       - name: Setup JDK
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: 17
