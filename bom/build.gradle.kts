@@ -53,7 +53,7 @@ dependencies {
         api("androidx.compose.ui:ui-tooling-android:1.6.0-beta03")
         api("androidx.compose.ui:ui-tooling-data:1.6.0-beta03")
         api("androidx.compose.ui:ui-tooling-data-android:1.6.0-beta03")
-        api("androidx.compose.ui:ui-tooling-preview:1.6.0-beta02")
+        api("androidx.compose.ui:ui-tooling-preview:1.6.0-beta03")
         api("androidx.compose.ui:ui-tooling-preview-android:1.6.0-beta03")
         api("androidx.compose.ui:ui-unit:1.6.0-beta03")
         api("androidx.compose.ui:ui-unit-android:1.6.0-beta03")
