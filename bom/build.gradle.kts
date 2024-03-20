@@ -24,7 +24,7 @@ dependencies {
         api("androidx.compose.material:material-icons-extended-android:1.7.0-alpha05")
         api("androidx.compose.material:material-ripple:1.7.0-alpha05")
         api("androidx.compose.material:material-ripple-android:1.7.0-alpha05")
-        api("androidx.compose.material3:material3:1.3.0-alpha02")
+        api("androidx.compose.material3:material3:1.3.0-alpha03")
         api("androidx.compose.material3:material3-android:1.3.0-alpha03")
         api("androidx.compose.material3:material3-adaptive-navigation-suite:1.0.0-alpha05")
         api("androidx.compose.material3:material3-adaptive-navigation-suite-android:1.0.0-alpha05")
