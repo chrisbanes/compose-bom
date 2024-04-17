@@ -28,6 +28,8 @@ dependencies {
         api("androidx.compose.material3:material3-android:1.3.0-alpha05")
         api("androidx.compose.material3:material3-adaptive-navigation-suite:1.0.0-alpha06")
         api("androidx.compose.material3:material3-adaptive-navigation-suite-android:1.0.0-alpha06")
+        api("androidx.compose.material3:material3-common:1.0.0-alpha01")
+        api("androidx.compose.material3:material3-common-android:1.0.0-alpha01")
         api("androidx.compose.material3:material3-window-size-class:1.3.0-alpha05")
         api("androidx.compose.material3:material3-window-size-class-android:1.3.0-alpha05")
         api("androidx.compose.material3.adaptive:adaptive:1.0.0-alpha11")
