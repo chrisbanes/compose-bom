@@ -22,6 +22,7 @@ dependencies {
         api("androidx.compose.material:material-icons-core-android:1.7.0-beta01")
         api("androidx.compose.material:material-icons-extended:1.7.0-beta01")
         api("androidx.compose.material:material-icons-extended-android:1.7.0-beta01")
+        api("androidx.compose.material:material-navigation:1.7.0-beta01")
         api("androidx.compose.material:material-ripple:1.7.0-beta01")
         api("androidx.compose.material:material-ripple-android:1.7.0-beta01")
         api("androidx.compose.material3:material3:1.3.0-beta01")
