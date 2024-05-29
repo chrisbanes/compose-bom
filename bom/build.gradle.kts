@@ -71,6 +71,6 @@ dependencies {
         api("androidx.compose.ui:ui-unit-android:1.7.0-beta02")
         api("androidx.compose.ui:ui-util:1.7.0-beta02")
         api("androidx.compose.ui:ui-util-android:1.7.0-beta02")
-        api("androidx.compose.ui:ui-viewbinding:1.7.0-beta01")
+        api("androidx.compose.ui:ui-viewbinding:1.7.0-beta02")
     }
 }
