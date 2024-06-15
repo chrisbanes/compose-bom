@@ -1,15 +1,17 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     id("com.android.library") version "8.4.2"
-    id("org.jetbrains.kotlin.android")  version "2.0.0"
+    kotlin("android") version "2.0.0"
+    kotlin("plugin.compose") version "2.0.0"
 }
 
 android {
     namespace = "dev.chrisbanes.compose.bom.testapp"
-    compileSdk = 32
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 27
-        targetSdk = 32
     }
 
     compileOptions {
@@ -17,16 +19,14 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-
     buildFeatures {
         compose = true
     }
+}
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14"
+kotlin {
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_1_8)
     }
 }
 
