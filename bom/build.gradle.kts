@@ -59,7 +59,7 @@ dependencies {
         api("androidx.compose.ui:ui-test-junit4-android:1.7.0-beta06")
         api("androidx.compose.ui:ui-test-manifest:1.7.0-beta06")
         api("androidx.compose.ui:ui-text:1.7.0-beta06")
-        api("androidx.compose.ui:ui-text-android:1.7.0-beta05")
+        api("androidx.compose.ui:ui-text-android:1.7.0-beta06")
         api("androidx.compose.ui:ui-text-google-fonts:1.7.0-beta06")
         api("androidx.compose.ui:ui-tooling:1.7.0-beta06")
         api("androidx.compose.ui:ui-tooling-android:1.7.0-beta06")
