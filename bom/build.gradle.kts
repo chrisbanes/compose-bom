@@ -25,7 +25,7 @@ dependencies {
         api("androidx.compose.material:material-navigation:1.7.0-beta01")
         api("androidx.compose.material:material-ripple:1.7.0-beta06")
         api("androidx.compose.material:material-ripple-android:1.7.0-beta06")
-        api("androidx.compose.material3:material3:1.3.0-beta04")
+        api("androidx.compose.material3:material3:1.3.0-beta05")
         api("androidx.compose.material3:material3-android:1.3.0-beta05")
         api("androidx.compose.material3:material3-adaptive-navigation-suite:1.3.0-beta05")
         api("androidx.compose.material3:material3-adaptive-navigation-suite-android:1.3.0-beta05")
