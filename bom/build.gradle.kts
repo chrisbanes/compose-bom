@@ -15,7 +15,7 @@ dependencies {
         api("androidx.compose.foundation:foundation:1.7.0-beta07")
         api("androidx.compose.foundation:foundation-android:1.7.0-beta06")
         api("androidx.compose.foundation:foundation-layout:1.7.0-beta07")
-        api("androidx.compose.foundation:foundation-layout-android:1.7.0-beta06")
+        api("androidx.compose.foundation:foundation-layout-android:1.7.0-beta07")
         api("androidx.compose.material:material:1.7.0-beta07")
         api("androidx.compose.material:material-android:1.7.0-beta07")
         api("androidx.compose.material:material-icons-core:1.7.0-beta07")
