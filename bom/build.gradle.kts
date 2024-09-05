@@ -37,7 +37,7 @@ dependencies {
         api("androidx.compose.material3.adaptive:adaptive-android:1.1.0-alpha02")
         api("androidx.compose.material3.adaptive:adaptive-layout:1.1.0-alpha02")
         api("androidx.compose.material3.adaptive:adaptive-layout-android:1.1.0-alpha02")
-        api("androidx.compose.material3.adaptive:adaptive-navigation:1.1.0-alpha01")
+        api("androidx.compose.material3.adaptive:adaptive-navigation:1.1.0-alpha02")
         api("androidx.compose.material3.adaptive:adaptive-navigation-android:1.1.0-alpha02")
         api("androidx.compose.runtime:runtime:1.8.0-alpha01")
         api("androidx.compose.runtime:runtime-android:1.8.0-alpha01")
