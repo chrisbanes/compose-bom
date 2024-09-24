@@ -1,6 +1,6 @@
 # DEPRECATED
 
-This library is now deprecated and no further releases are planned, as the Compose team have started publishing alpha version of the [offical BOM](https://developer.android.com/develop/ui/compose/bom). The first version of the official BOM (as of 6th September 2024) is `androidx.compose:compose-bom:2024.09.00-alpha`, therefore please migrate to that.
+This library is now deprecated and no further releases are planned, as the Compose team have started publishing alpha version of the [offical BOM](https://developer.android.com/develop/ui/compose/bom). The first version of the official BOM (as of 6th September 2024) is `androidx.compose:compose-bom-alpha:2024.09.02`, therefore please migrate to that.
 
 Thanks to everyone who has found this library useful, as well as @eygraber for maintaining it over the past 6 months or so! 🫡
 
